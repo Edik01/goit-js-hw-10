@@ -33,7 +33,7 @@ window.addEventListener('load', onLoad);
 
 function onChange(event) {
   fetchCatByBreed(event.target.value)
-    .then(({ [data] }) => {
+    .then(({ data }) => {
       console.log(data);
     })
     .catch(error => {
